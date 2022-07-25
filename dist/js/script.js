@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.carusel_slider').slick({
+    $('.promo__wrapper').slick({
       dots: true,
       arrow: false
     });
