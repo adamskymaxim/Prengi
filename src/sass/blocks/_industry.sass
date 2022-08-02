@@ -41,16 +41,25 @@
             &:nth-of-type(6)
                 border: none
     &__carousel
+        position: relative
         width: 947px
         margin: 0 auto
         div
             width: 947px
         .slick-prev, .slick-next
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
             background: transparent
             border: none
             cursor: pointer
+        .slick-prev
+            left: -29px
+        .slick-next
+            right: -29px   
         .slick-list
             overflow: hidden
             .slick-track
+                display: flex
                 
                 

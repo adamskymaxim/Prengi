@@ -19,13 +19,6 @@
                 line-height: 26px
                 text-align: right
                 text-transform: uppercase
-    &__wrapper
-        margin-top: 27px
-        .slider
-            display: flex
-            justify-content: space-between
-        img
-            object-fit: cover
     &__title
         color: #ffffff
         font-size: 42px
@@ -56,6 +49,53 @@
         border-radius: 5px
         margin-top: 39px
         cursor: pointer
+    &__wrapper
+        position: relative
+        margin-top: 27px
+        .slick-prev, .slick-next
+            display: none
+        .slick-list
+            overflow: hidden
+            .slick-track
+                display: flex
+        .slider
+            display: flex
+            justify-content: space-between
+        img
+            object-fit: cover
+    
+    &__slider
+        position: relative
+        .slick-dots
+            position: absolute
+            bottom: 68px
+            left: 50%
+            transform: translateX(-50%)
+            li
+                list-style-type: none
+            button
+                font-size: 0
+                width: 11px
+                height: 11px
+                border: 1px solid #fff
+                border-radius: 50%
+                margin: 0 2px
+                background: transparent
+                cursor: pointer
+        .slick-active
+            button
+                background-color: #fff
+        .slick-prev, .slick-next
+            position: absolute
+            border: none
+            background: rgba(0, 0, 0, 0)
+            cursor: pointer
+            bottom: 64px
+            z-index: 1000
+        .slick-prev
+            left: 45%
+        .slick-next
+            right: 45%
     
     
             

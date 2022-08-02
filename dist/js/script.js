@@ -1,7 +1,11 @@
 $(document).ready(function(){
-    $('.promo__slide').slick({
+    $('.promo__slider').slick({
+      arrows: true,
       dots: true,
-      arrow: false
+      speed: 1200,
+      prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/miniarrow-prev.png"></img></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="img/icons/miniarrow-next.png"></img></button>',
+      Infinity: true
     });
   });
 
