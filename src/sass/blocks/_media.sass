@@ -1,0 +1,121 @@
+@media ( max-width: 1200px )
+    .container
+        width: 960px
+    .promo
+        &__slider
+            .slick-prev
+                left: 44%
+            .slick-next
+                right: 46%
+            .slick-dots
+                left: 49%
+        &__title
+            font-size: 36px
+            line-height: 42px
+        &__subtitle
+            font-size: 23px
+            margin-top: 12px
+
+@media ( max-width: 992px )
+    .container
+        width: 720px
+    .header
+        &__item
+            flex-direction: column
+            align-items: center
+            margin-right: 10px
+            &-descr
+                text-align: center
+        .container
+            width: 100%
+            padding: 0 10px
+    .promo
+        height: 613px
+        &__slider
+            .slick-dots
+                bottom: 26px
+                left: 18%
+            .slick-prev
+                left: 11.5%
+                bottom: 22px
+            .slick-next
+                right: 75.5%
+                bottom: 22px
+        &__title
+            font-size: 33px
+        
+
+@media ( max-width: 768px )
+    .container
+        width: 540px
+    .promo
+        height: 515px
+        &__btn
+            width: 197px
+            height: 48px
+        &__title
+            margin: 0
+            font-size: 29px
+        &__subtitle
+            font-size: 20px
+        &__slider
+            .slick-prev
+                left: 9.5%
+                bottom: 22px
+            .slick-next
+                right: 73.5%
+                bottom: 22px
+        .logo
+            margin-right: 5px
+            img
+                width: 100%
+        .nav
+            a
+                margin-top: 23px
+
+@media ( max-width: 576px )
+    .container
+        width: 100%
+        padding: 0 10px
+    .promo
+        padding-top: 27px
+        .nav
+            position: fixed
+            display: flex
+            flex-direction: column
+            height: 100vh
+            width: 44%
+            background-color: $main-color
+            z-index: 1000
+            top: 0
+            left: -100%
+            padding-bottom: 64px
+            padding-left: 20px
+            transition: 1s all
+            &_active
+                left: 0
+            .close
+                position: absolute
+                right: 10px
+                top: 19px
+                div
+                    height: 2px
+                    width: 30px
+                    background-color: #fff
+                .div1
+                    transform: rotate(47deg)
+                .div2
+                    transform: rotate(-44deg)
+                    margin-top: -1px
+                
+            a
+                text-align: left
+                font-size: 19px
+                margin-top: 40px
+        &__slider
+            .slick-next, .slick-prev
+                z-index: 900
+
+        .hamburger
+            display: flex
+    

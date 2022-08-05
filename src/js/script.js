@@ -19,4 +19,17 @@ $(document).ready(function(){
       Infinity: true
   });
 });
+
+
+const hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.nav'),
+      closenav = document.querySelector('.close');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.add('nav_active');
+});
+
+closenav.addEventListener('click', () => {
+  menu.classList.remove('nav_active');
+});
       
