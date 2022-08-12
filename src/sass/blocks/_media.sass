@@ -32,6 +32,14 @@
     .benefits
         &__item
             width: 480px
+
+
+    .variants
+        &__cloud
+            margin-right: 114px
+            font-size: 15px
+        &__hosted
+            font-size: 15px
 @media ( max-width: 992px )
     .container
         width: 720px
@@ -90,6 +98,10 @@
     .benefits
         &__item
             width: 359px
+
+
+    .variants
+        padding: 80px 0
             
         
 
@@ -157,6 +169,19 @@
         &__item
             width: 480px
             margin: 0 auto
+
+    .variants
+        &__cloud
+            font-size: 14px
+            span
+                font-size: 29px
+                line-height: 27px
+
+        &__hosted
+            font-size: 14px
+            span
+                font-size: 29px
+                line-height: 27px
 
 @media ( max-width: 576px )
     .container
@@ -320,4 +345,31 @@
                 h2
                     font-size: 19px
             
+
+
+    .variants
+        background: url(../img/bg/variant_bg_verticale.jpg) center center / cover no-repeat
+        padding: 40px 0
+        &__title
+            font-size: 23px
+        &__cloud
+            text-align: center
+            margin: 0
+            width: 100%
+            font-size: 15px
+            span
+                text-align: center
+                font-size: 23px
+            &::after
+                left: -10px
+        &__hosted
+            text-align: center
+            width: 100%
+            margin-top: 128px
+            span
+                text-align: center
+                font-size: 23px
+        &__wrapper
+            flex-direction: column
+            margin-top: 36px
 
