@@ -20,6 +20,13 @@
             width: 309px
         .after_prengi_item
             width: 309px
+
+
+    .industry
+        .slick-next
+            right: -6px
+        .slick-prev
+            left: -6px
 @media ( max-width: 992px )
     .container
         width: 720px
@@ -55,6 +62,24 @@
             width: 228px
         .after_prengi_descr
             font-size: 16px
+
+
+    .industry
+        &__slider
+            .slick-slide
+                img
+                    width: 100%
+                    object-fit: cover
+        &__wrapper
+            width: 100%
+            padding: 0 18px
+        &__menu
+            &-item
+                padding-right: 13px
+        &__carousel
+            width: 720px
+            div
+                width: 720px
             
         
 
@@ -91,10 +116,31 @@
         .to_prengi_item
             width: 165px
             height: 269px
+            img
+                width: 100%
+                object-fit: cover
         .to_prengi_descr
             font-size: 13px
         .after_prengi_item
             width: 165px
+            img
+                width: 100%
+                object-fit: cover
+    
+    .industry
+        &__title
+            font-size: 25px
+        &__wrapper
+            padding: 0 6px
+            width: 100%
+        &__menu
+            &-item
+                font-size: 12px
+                padding-right: 7px
+        &__carousel
+            width: 540px
+            div
+                width: 540px
 
 @media ( max-width: 576px )
     .container
@@ -151,7 +197,7 @@
                 
             a
                 text-align: left
-                font-size: 19px
+                font-size: 16px
                 margin-top: 40px
         &__slider
             .slick-next, .slick-prev
@@ -167,6 +213,8 @@
             justify-content: center
     
     .prengi
+        &__title
+            font-size: 31px
         padding-top: 33px
         .after_prengi
             flex-direction: column
@@ -175,14 +223,75 @@
             flex-direction: column
             align-items: center
         .to_prengi_item
-            width: 300px
+            width: 280px
             height: 255px
             margin-top: 15px
+            img
+                width: 240px
+                height: 150px
+                margin-top: 15px
+        .to_prengi_descr
+            margin-top: 15px
+            .to_prengi_question
+                width: 40%
+                height: 40%
         .to_prengi_descr
             font-size: 18px
         .after_prengi_item
-            width: 300px
+            width: 280px
             height: 255px
             margin-top: 15px
+            img
+                width: 240px
+                height: 150px
+                margin-top: 15px
+        .after_prengi_descr
+            margin-top: 15px
+            .check
+                width: 40%
+                height: 40%
+            
+            
         .after_prengi_descr
             font-size: 18px
+
+
+    .industry
+        height: 580px
+        padding-top: 33px
+        &__title
+            font-size: 25px
+        &__wrapper
+            padding: 0
+            width: 100%
+        &__menu
+            &-item
+                font-size: 12px
+                padding-right: 2px
+                line-height: 22px
+        &__carousel
+            width: 300px
+            position: relative
+            .slick-dots
+                position: absolute
+                bottom: -36px
+                left: 50%
+                transform: translateX(-50%)
+                li
+                    list-style-type: none
+                button
+                    font-size: 0
+                    width: 11px
+                    height: 11px
+                    border: 1px solid #fff
+                    border-radius: 50%
+                    margin: 0 2px
+                    background: transparent
+                    cursor: pointer
+            .slick-active
+                button
+                    background-color: #fff
+            div
+                width: 300px
+            
+

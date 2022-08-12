@@ -16,7 +16,17 @@ $(document).ready(function(){
       adptiveHeght: false,
       prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-left.png"></img></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-right.png"></img></button>',
-      Infinity: true
+      Infinity: true,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            arrows: false,
+            dots: true
+          }
+        }
+      ]
   });
 });
 
